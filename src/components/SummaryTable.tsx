@@ -1,5 +1,6 @@
 import dayjs from "dayjs"
 import { useEffect, useState } from "react"
+import { api } from "../lib/axios"
 import { generateDatesFromYearBeginning } from "../utils/generate-dates-from-year-beginning"
 import { HabitDay } from "./HabitDay"
 
@@ -21,6 +22,12 @@ export function SummaryTable() {
 
     const [summary, setSummary] = useState<Summary>([])
 
+    useEffect(() => {
+        api.get('summary').then(response => {
+            setSummary(response.data)
+        })
+    }, [])
+
     return (
         <div className='w-full flex'>
             <div className="grid grid-rows-7 grid-flow-row grap-3">
@@ -36,7 +43,6 @@ export function SummaryTable() {
 
             <div className="grid grid-rows-7 grid-flow-col gap-3">
                 {summary.length && summaryDates.map((date) => {
-
                     const dayInSummary = summary.find(day => {
                         return dayjs(date).isSame(day.date, 'day')
                     })
@@ -44,9 +50,9 @@ export function SummaryTable() {
                     return (
                         <HabitDay
                             key={date.toString()}
-                        //date={date}
-                        //amount={dayInSummary?.amount}
-                        //defaultCompleted={dayInSummary?.completed}
+                            date={date}
+                            amount={dayInSummary?.amount}
+                            defaultCompleted={dayInSummary?.completed}
                         />
                     )
                 })}
