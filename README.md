@@ -9,8 +9,7 @@ You are in control of your routine!
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=nlw&message=setup&color=blueviolet&style=for-the-badge"/>
-  <img src="https://img.shields.io/github/license/MrRioja/nlw-setup?color=blueviolet&logo=License&style=for-the-badge"/>
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MrRioja/nlw-setup?color=blueviolet&logo=TypeScript&logoColor=white&style=for-the-badge">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/glendson/web-habits?color=blueviolet&logo=TypeScript&logoColor=white&style=for-the-badge">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Glendson/web-habits?color=blueviolet&style=for-the-badge">
 </p>
 <br>
@@ -105,7 +104,7 @@ $ yarn dev
 <br/>
 <br/>
 
-<a href="https://linkedin.com/in/luizrioja" target="_blank">
+<a href="https://www.linkedin.com/in/glendson-zeus-tomazetto-garcete-a2a0b190/" target="_blank">
 <img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
